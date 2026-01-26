@@ -1,22 +1,24 @@
+package Service;
+import model.Employee;
 import java.util.ArrayList;
 public class Payroll{
 
-    private ArrayList<Employee> employee = new ArrayList<>(); 
+    private ArrayList<Employee> employee;
 
-    public Payroll{
-        employee = new ArrayList<>();
-    }
+    public Payroll(){
+        employee =  ArrayList<>();
+    }   
 
     public void addEmployee(Employee emp){
         employee.add(emp);
     }
 
     public void displayEmployeePayroll(){
-        System.out.println('==Display All Employees Detail==');
-        for(Employee emp in : employee){
+        System.out.println("==Display All Employees Detail==");
+        for(Employee emp : employee){
             emp.displayInfo();
         }
-        System.out.println('================================');
+        System.out.println("================================");
     }
     
 
