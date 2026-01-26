@@ -6,7 +6,7 @@ public class Payroll{
     private ArrayList<Employee> employee;
 
     public Payroll(){
-        employee =  ArrayList<>();
+        employee = new ArrayList<>();
     }   
 
     public void addEmployee(Employee emp){
